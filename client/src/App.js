@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Container, AppBar, Typography, Grow, Grid } from '@material-ui/core';
+import Navbar from './components/Navbar/Navbar'
 import { useDispatch } from 'react-redux';
+import {Switch, Route} from 'react-router-dom';
 
 import Posts from './components/Posts/Posts';
 import Form from './components/Form/Form';
@@ -18,10 +20,11 @@ const App = () => {
   }, [currentId, dispatch]);
 
   return (
+    
     <Container maxWidth="lg">
       <AppBar className={classes.appBar} position="static" color="palette.primary.dark">
         <Typography className={classes.heading} variant="h2" align="center">Garage Sale</Typography>
-        {/* <img className={classes.image} src={memories} alt="icon" height="60" /> */}
+        <img className={classes.image} src='https://png.pngtree.com/png-vector/20191031/ourmid/pngtree-money-vector-illustration-with-filled-line-design-isolated-on-white-background-png-image_1928834.jpg' alt="icon" height="60" />
       </AppBar>
       <Grow in>
         <Container>
@@ -36,6 +39,8 @@ const App = () => {
         </Container>
       </Grow>
     </Container>
+
+    
   );
 };
 
