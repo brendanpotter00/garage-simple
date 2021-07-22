@@ -1,0 +1,13 @@
+
+:root {
+    --cover: rgba(114, 114, 114, 0.568);
+}
+
+body {
+    /* //background-color: rgba(0,183,255, 1); */
+    background: linear-gradient(
+        var(--cover),
+        var(--cover)
+      ),
+      url("https://images.pexels.com/photos/7125298/pexels-photo-7125298.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
